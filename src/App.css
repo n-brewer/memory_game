@@ -2,31 +2,101 @@
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background: snow;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gameBox {
+  margin: 1rem 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 80%;
+}
+
+body {
+  background: snow;
+  text-align: center;
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+root {
+  height: 100%;
+}
+
+.currentPlayer {
+  font-size: 28px;
+  font-weight: bold;
+  color: lightsalmon;
+}
+
+.username {
+  padding: 10px;
+  display: flex;
+}
+
+.username div {
+  padding-right: 10px;
+}
+
+.usernameInputs {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.memoryCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+  background: #acc7d5;
+  transition: ease-in-out 250ms;
+}
+
+.memoryCard:hover {
+  background: lightblue;
+  cursor: pointer;
+}
+
+.memoryCard span {
+  color: #2d2d2d;
+  font-size: 36px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.menuBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  border: 2px solid #222;
+  background: lightslategray;
+}
+
+.menuBar span {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.gameBtn {
+  margin: 0 1rem;
+  width: 80px;
+  height: 30px;
   color: white;
+  background: mediumseagreen;
+  border-radius: 15px;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gameBtn:focus {
+  outline: 0;
 }
