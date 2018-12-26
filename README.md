@@ -1,5 +1,6 @@
 ### Starting the Game
 
+#### `npm install`
 #### `npm start`
 
-Go to `localhost:8000/` and start playing!
+Go to `localhost:3000/` and start playing!
